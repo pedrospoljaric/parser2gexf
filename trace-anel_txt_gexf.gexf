@@ -1,0 +1,376 @@
+<gexf xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.1draft" xmlns:ns0="xsi" version="1.1" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.1draft.xsd">
+  <meta lastmodified="2017-01-30T11:18:50.500000">
+    <creator>Pedro e David</creator>
+    <description>Dynamic graph</description>
+  </meta>
+  <graph defaultedgetype="directed" label="Graph" mode="dynamic">
+    <attributes class="node" mode="dynamic"/>
+    <attributes class="node" mode="static"/>
+    <attributes class="edge" mode="dynamic"/>
+    <attributes class="edge" mode="static"/>
+    <nodes>
+      <node id="11" label="P#11" start="0.0" end="400.685779">
+        <attvalues/>
+      </node>
+      <node id="10" label="P#10" start="0.0" end="399.488402">
+        <attvalues/>
+      </node>
+      <node id="13" label="P#13" start="0.0" end="400.340074">
+        <attvalues/>
+      </node>
+      <node id="12" label="P#12" start="0.0" end="400.491236">
+        <attvalues/>
+      </node>
+      <node id="15" label="P#15" start="0.0" end="400.340398">
+        <attvalues/>
+      </node>
+      <node id="14" label="P#14" start="0.0" end="401.187091">
+        <attvalues/>
+      </node>
+      <node id="17" label="P#17" start="0.0" end="400.674113">
+        <attvalues/>
+      </node>
+      <node id="16" label="P#16" start="0.0" end="401.135284">
+        <attvalues/>
+      </node>
+      <node id="19" label="P#19" start="0.0" end="400.914317">
+        <attvalues/>
+      </node>
+      <node id="18" label="P#18" start="0.0" end="403.097504">
+        <attvalues/>
+      </node>
+      <node id="1" label="P#1" start="0.0" end="400.614064">
+        <attvalues/>
+      </node>
+      <node id="0" label="P#0" start="0.0" end="403.184696">
+        <attvalues/>
+      </node>
+      <node id="3" label="P#3" start="0.0" end="400.937075">
+        <attvalues/>
+      </node>
+      <node id="2" label="P#2" start="0.0" end="398.769605">
+        <attvalues/>
+      </node>
+      <node id="5" label="P#5" start="0.0" end="400.852887">
+        <attvalues/>
+      </node>
+      <node id="4" label="P#4" start="0.0" end="399.116484">
+        <attvalues/>
+      </node>
+      <node id="7" label="P#7" start="0.0" end="399.892681">
+        <attvalues/>
+      </node>
+      <node id="6" label="P#6" start="0.0" end="399.405636">
+        <attvalues/>
+      </node>
+      <node id="9" label="P#9" start="0.0" end="399.539828">
+        <attvalues/>
+      </node>
+      <node id="8" label="P#8" start="0.0" end="401.237145">
+        <attvalues/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="24" source="4" target="5" start="17.5418" end="17.695975" weight="8000.0" label="4_5">
+        <attvalues/>
+      </edge>
+      <edge id="25" source="5" target="6" start="17.696316" end="17.70318" weight="8000.0" label="5_6">
+        <attvalues/>
+      </edge>
+      <edge id="26" source="6" target="7" start="17.70356" end="17.785824" weight="8000.0" label="6_7">
+        <attvalues/>
+      </edge>
+      <edge id="27" source="7" target="8" start="17.786222" end="17.814488" weight="8000.0" label="7_8">
+        <attvalues/>
+      </edge>
+      <edge id="20" source="0" target="1" start="17.241612" end="17.415887" weight="8000.0" label="0_1">
+        <attvalues/>
+      </edge>
+      <edge id="21" source="1" target="2" start="17.416228" end="17.433442" weight="8000.0" label="1_2">
+        <attvalues/>
+      </edge>
+      <edge id="22" source="2" target="3" start="17.433822" end="17.519102" weight="8000.0" label="2_3">
+        <attvalues/>
+      </edge>
+      <edge id="23" source="3" target="4" start="17.519552" end="17.541449" weight="8000.0" label="3_4">
+        <attvalues/>
+      </edge>
+      <edge id="28" source="8" target="9" start="17.814918" end="17.83976" weight="8000.0" label="8_9">
+        <attvalues/>
+      </edge>
+      <edge id="29" source="9" target="10" start="17.840132" end="17.848435" weight="8000.0" label="9_10">
+        <attvalues/>
+      </edge>
+      <edge id="0" source="0" target="1" start="15.530193" end="16.401628" weight="800.0" label="0_1">
+        <attvalues/>
+      </edge>
+      <edge id="4" source="4" target="5" start="16.478895" end="16.638311" weight="800.0" label="4_5">
+        <attvalues/>
+      </edge>
+      <edge id="8" source="8" target="9" start="16.733516" end="16.748669" weight="800.0" label="8_9">
+        <attvalues/>
+      </edge>
+      <edge id="59" source="19" target="0" start="23.391566" end="23.453723" weight="80000.0" label="19_0">
+        <attvalues/>
+      </edge>
+      <edge id="58" source="18" target="19" start="23.146788" end="23.391154" weight="80000.0" label="18_19">
+        <attvalues/>
+      </edge>
+      <edge id="55" source="15" target="16" start="22.520116" end="22.679252" weight="80000.0" label="15_16">
+        <attvalues/>
+      </edge>
+      <edge id="54" source="14" target="15" start="22.271228" end="22.519644" weight="80000.0" label="14_15">
+        <attvalues/>
+      </edge>
+      <edge id="57" source="17" target="18" start="22.9758" end="23.146291" weight="80000.0" label="17_18">
+        <attvalues/>
+      </edge>
+      <edge id="56" source="16" target="17" start="22.679784" end="22.975391" weight="80000.0" label="16_17">
+        <attvalues/>
+      </edge>
+      <edge id="51" source="11" target="12" start="21.464384" end="21.73159" weight="80000.0" label="11_12">
+        <attvalues/>
+      </edge>
+      <edge id="50" source="10" target="11" start="21.134296" end="21.463958" weight="80000.0" label="10_11">
+        <attvalues/>
+      </edge>
+      <edge id="53" source="13" target="14" start="22.050872" end="22.270812" weight="80000.0" label="13_14">
+        <attvalues/>
+      </edge>
+      <edge id="52" source="12" target="13" start="21.732068" end="22.050339" weight="80000.0" label="12_13">
+        <attvalues/>
+      </edge>
+      <edge id="88" source="8" target="9" start="205.509152" end="216.837656" weight="8000000.0" label="8_9">
+        <attvalues/>
+      </edge>
+      <edge id="89" source="9" target="10" start="216.8384" end="225.693717" weight="8000000.0" label="9_10">
+        <attvalues/>
+      </edge>
+      <edge id="82" source="2" target="3" start="128.235624" end="145.153214" weight="8000000.0" label="2_3">
+        <attvalues/>
+      </edge>
+      <edge id="83" source="3" target="4" start="145.154272" end="156.666235" weight="8000000.0" label="3_4">
+        <attvalues/>
+      </edge>
+      <edge id="80" source="0" target="1" start="85.77496" end="102.705672" weight="8000000.0" label="0_1">
+        <attvalues/>
+      </edge>
+      <edge id="81" source="1" target="2" start="102.706312" end="128.23464" weight="8000000.0" label="1_2">
+        <attvalues/>
+      </edge>
+      <edge id="86" source="6" target="7" start="181.969696" end="196.999812" weight="8000000.0" label="6_7">
+        <attvalues/>
+      </edge>
+      <edge id="87" source="7" target="8" start="197.00088" end="205.508249" weight="8000000.0" label="7_8">
+        <attvalues/>
+      </edge>
+      <edge id="84" source="4" target="5" start="156.666992" end="168.089693" weight="8000000.0" label="4_5">
+        <attvalues/>
+      </edge>
+      <edge id="85" source="5" target="6" start="168.090656" end="181.968878" weight="8000000.0" label="5_6">
+        <attvalues/>
+      </edge>
+      <edge id="3" source="3" target="4" start="16.476995" end="16.476995" weight="800.0" label="3_4">
+        <attvalues/>
+      </edge>
+      <edge id="7" source="7" target="8" start="16.730746" end="16.730746" weight="800.0" label="7_8">
+        <attvalues/>
+      </edge>
+      <edge id="39" source="19" target="0" start="18.39684" end="18.419104" weight="8000.0" label="19_0">
+        <attvalues/>
+      </edge>
+      <edge id="38" source="18" target="19" start="18.338784" end="18.396487" weight="8000.0" label="18_19">
+        <attvalues/>
+      </edge>
+      <edge id="33" source="13" target="14" start="18.14016" end="18.145296" weight="8000.0" label="13_14">
+        <attvalues/>
+      </edge>
+      <edge id="32" source="12" target="13" start="17.998858" end="18.139791" weight="8000.0" label="12_13">
+        <attvalues/>
+      </edge>
+      <edge id="31" source="11" target="12" start="17.991012" end="17.998501" weight="8000.0" label="11_12">
+        <attvalues/>
+      </edge>
+      <edge id="30" source="10" target="11" start="17.848788" end="17.990632" weight="8000.0" label="10_11">
+        <attvalues/>
+      </edge>
+      <edge id="37" source="17" target="18" start="18.332612" end="18.338432" weight="8000.0" label="17_18">
+        <attvalues/>
+      </edge>
+      <edge id="36" source="16" target="17" start="18.208492" end="18.33227" weight="8000.0" label="16_17">
+        <attvalues/>
+      </edge>
+      <edge id="35" source="15" target="16" start="18.191972" end="18.208122" weight="8000.0" label="15_16">
+        <attvalues/>
+      </edge>
+      <edge id="34" source="14" target="15" start="18.145724" end="18.191623" weight="8000.0" label="14_15">
+        <attvalues/>
+      </edge>
+      <edge id="60" source="0" target="1" start="24.011376" end="25.470374" weight="800000.0" label="0_1">
+        <attvalues/>
+      </edge>
+      <edge id="61" source="1" target="2" start="25.470916" end="28.022304" weight="800000.0" label="1_2">
+        <attvalues/>
+      </edge>
+      <edge id="62" source="2" target="3" start="28.023266" end="29.925372" weight="800000.0" label="2_3">
+        <attvalues/>
+      </edge>
+      <edge id="63" source="3" target="4" start="29.926248" end="31.543086" weight="800000.0" label="3_4">
+        <attvalues/>
+      </edge>
+      <edge id="64" source="4" target="5" start="31.543932" end="33.031007" weight="800000.0" label="4_5">
+        <attvalues/>
+      </edge>
+      <edge id="65" source="5" target="6" start="33.031638" end="34.992931" weight="800000.0" label="5_6">
+        <attvalues/>
+      </edge>
+      <edge id="66" source="6" target="7" start="34.993952" end="37.170144" weight="800000.0" label="6_7">
+        <attvalues/>
+      </edge>
+      <edge id="67" source="7" target="8" start="37.170872" end="39.275928" weight="800000.0" label="7_8">
+        <attvalues/>
+      </edge>
+      <edge id="68" source="8" target="9" start="39.277432" end="41.250275" weight="800000.0" label="8_9">
+        <attvalues/>
+      </edge>
+      <edge id="69" source="9" target="10" start="41.251292" end="42.884513" weight="800000.0" label="9_10">
+        <attvalues/>
+      </edge>
+      <edge id="2" source="2" target="3" start="16.405981" end="16.474473" weight="800.0" label="2_3">
+        <attvalues/>
+      </edge>
+      <edge id="6" source="6" target="7" start="16.642761" end="16.728594" weight="800.0" label="6_7">
+        <attvalues/>
+      </edge>
+      <edge id="99" source="19" target="0" start="394.926464" end="396.61226" weight="8000000.0" label="19_0">
+        <attvalues/>
+      </edge>
+      <edge id="98" source="18" target="19" start="391.681888" end="394.925812" weight="8000000.0" label="18_19">
+        <attvalues/>
+      </edge>
+      <edge id="91" source="11" target="12" start="234.406112" end="246.471374" weight="8000000.0" label="11_12">
+        <attvalues/>
+      </edge>
+      <edge id="90" source="10" target="11" start="225.694768" end="234.405179" weight="8000000.0" label="10_11">
+        <attvalues/>
+      </edge>
+      <edge id="93" source="13" target="14" start="254.944416" end="262.899801" weight="8000000.0" label="13_14">
+        <attvalues/>
+      </edge>
+      <edge id="92" source="12" target="13" start="246.472272" end="254.943552" weight="8000000.0" label="12_13">
+        <attvalues/>
+      </edge>
+      <edge id="95" source="15" target="16" start="383.04704" end="385.751769" weight="8000000.0" label="15_16">
+        <attvalues/>
+      </edge>
+      <edge id="94" source="14" target="15" start="262.900816" end="383.046008" weight="8000000.0" label="14_15">
+        <attvalues/>
+      </edge>
+      <edge id="97" source="17" target="18" start="388.996928" end="391.680833" weight="8000000.0" label="17_18">
+        <attvalues/>
+      </edge>
+      <edge id="96" source="16" target="17" start="385.752576" end="388.995889" weight="8000000.0" label="16_17">
+        <attvalues/>
+      </edge>
+      <edge id="11" source="11" target="12" start="16.883751" end="16.883752" weight="800.0" label="11_12">
+        <attvalues/>
+      </edge>
+      <edge id="10" source="10" target="11" start="16.752408" end="16.881596" weight="800.0" label="10_11">
+        <attvalues/>
+      </edge>
+      <edge id="13" source="13" target="14" start="16.988796" end="16.988797" weight="800.0" label="13_14">
+        <attvalues/>
+      </edge>
+      <edge id="12" source="12" target="13" start="16.885882" end="16.986864" weight="800.0" label="12_13">
+        <attvalues/>
+      </edge>
+      <edge id="15" source="15" target="16" start="17.030512" end="17.030513" weight="800.0" label="15_16">
+        <attvalues/>
+      </edge>
+      <edge id="14" source="14" target="15" start="16.990628" end="17.02828" weight="800.0" label="14_15">
+        <attvalues/>
+      </edge>
+      <edge id="17" source="17" target="18" start="17.156936" end="17.156937" weight="800.0" label="17_18">
+        <attvalues/>
+      </edge>
+      <edge id="16" source="16" target="17" start="17.032546" end="17.154914" weight="800.0" label="16_17">
+        <attvalues/>
+      </edge>
+      <edge id="19" source="19" target="0" start="17.211184" end="17.211185" weight="800.0" label="19_0">
+        <attvalues/>
+      </edge>
+      <edge id="18" source="18" target="19" start="17.159336" end="17.209106" weight="800.0" label="18_19">
+        <attvalues/>
+      </edge>
+      <edge id="48" source="8" target="9" start="20.624942" end="20.877816" weight="80000.0" label="8_9">
+        <attvalues/>
+      </edge>
+      <edge id="49" source="9" target="10" start="20.878276" end="21.133922" weight="80000.0" label="9_10">
+        <attvalues/>
+      </edge>
+      <edge id="46" source="6" target="7" start="20.096134" end="20.444274" weight="80000.0" label="6_7">
+        <attvalues/>
+      </edge>
+      <edge id="47" source="7" target="8" start="20.444732" end="20.624609" weight="80000.0" label="7_8">
+        <attvalues/>
+      </edge>
+      <edge id="44" source="4" target="5" start="19.568444" end="19.874599" weight="80000.0" label="4_5">
+        <attvalues/>
+      </edge>
+      <edge id="45" source="5" target="6" start="19.875002" end="20.095692" weight="80000.0" label="5_6">
+        <attvalues/>
+      </edge>
+      <edge id="42" source="2" target="3" start="19.051164" end="19.372288" weight="80000.0" label="2_3">
+        <attvalues/>
+      </edge>
+      <edge id="43" source="3" target="4" start="19.37274" end="19.568023" weight="80000.0" label="3_4">
+        <attvalues/>
+      </edge>
+      <edge id="40" source="0" target="1" start="18.50692" end="18.86374" weight="80000.0" label="0_1">
+        <attvalues/>
+      </edge>
+      <edge id="41" source="1" target="2" start="18.864084" end="19.050796" weight="80000.0" label="1_2">
+        <attvalues/>
+      </edge>
+      <edge id="1" source="1" target="2" start="16.403576" end="16.403576" weight="800.0" label="1_2">
+        <attvalues/>
+      </edge>
+      <edge id="5" source="5" target="6" start="16.640563" end="16.640563" weight="800.0" label="5_6">
+        <attvalues/>
+      </edge>
+      <edge id="9" source="9" target="10" start="16.750599" end="16.750599" weight="800.0" label="9_10">
+        <attvalues/>
+      </edge>
+      <edge id="77" source="17" target="18" start="54.156584" end="55.369918" weight="800000.0" label="17_18">
+        <attvalues/>
+      </edge>
+      <edge id="76" source="16" target="17" start="52.541916" end="54.155974" weight="800000.0" label="16_17">
+        <attvalues/>
+      </edge>
+      <edge id="75" source="15" target="16" start="51.297504" end="52.541309" weight="800000.0" label="15_16">
+        <attvalues/>
+      </edge>
+      <edge id="74" source="14" target="15" start="49.564568" end="51.296735" weight="800000.0" label="14_15">
+        <attvalues/>
+      </edge>
+      <edge id="73" source="13" target="14" start="47.871076" end="49.563918" weight="800000.0" label="13_14">
+        <attvalues/>
+      </edge>
+      <edge id="72" source="12" target="13" start="46.024056" end="47.870327" weight="800000.0" label="12_13">
+        <attvalues/>
+      </edge>
+      <edge id="71" source="11" target="12" start="44.547956" end="46.023315" weight="800000.0" label="11_12">
+        <attvalues/>
+      </edge>
+      <edge id="70" source="10" target="11" start="42.885228" end="44.547325" weight="800000.0" label="10_11">
+        <attvalues/>
+      </edge>
+      <edge id="79" source="19" target="0" start="56.90192" end="57.662097" weight="800000.0" label="19_0">
+        <attvalues/>
+      </edge>
+      <edge id="78" source="18" target="19" start="55.370716" end="56.90132" weight="800000.0" label="18_19">
+        <attvalues/>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

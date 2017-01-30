@@ -1,0 +1,333 @@
+%EventDef PajeDefineContainerType 1
+% Alias string
+% ContainerType string
+% Name string
+%EndEventDef
+%EventDef PajeDefineStateType 3
+% Alias string
+% ContainerType string
+% Name string
+%EndEventDef
+%EventDef PajeDefineEventType 4
+% Alias string
+% ContainerType string
+% Name string
+%EndEventDef
+%EventDef PajeDefineEntityValue 6
+% Alias string
+% EntityType string
+% Name string
+% Color color
+%EndEventDef
+%EventDef PajeCreateContainer 7
+% Time date
+% Alias string
+% Type string
+% Container string
+% Name string
+%EndEventDef
+%EventDef PajeDestroyContainer 8
+% Time date
+% Name string
+% Type string
+%EndEventDef
+%EventDef PajeSetState 10
+% Time date
+% Type string
+% Container string
+% Value string
+%EndEventDef
+%EventDef PajePushState 11
+% Time date
+% Type string
+% Container string
+% Value string
+%EndEventDef
+%EventDef PajePopState 12
+% Time date
+% Type string
+% Container string
+%EndEventDef
+%EventDef PajeNewEvent 20
+% Time date
+% Type string
+% Container string
+% Value string
+%EndEventDef
+%EventDef PajeDefineLinkType 41
+% Alias string
+% Name string
+% ContainerType string
+% SourceContainerType string
+% DestContainerType string
+%EndEventDef
+%EventDef PajeStartLink 42
+% Time date
+% Type string
+% Container string
+% SourceContainer string
+% Value string
+% Key string
+%EndEventDef
+%EventDef PajeEndLink 43
+% Time date
+% Type string
+% Container string
+% DestContainer string
+% Value string
+% Key string
+%EndEventDef
+%EventDef PajeDefineVariableType 50
+% Alias string
+% Name string
+% ContainerType string
+%EndEventDef
+%EventDef PajeSetVariable 51
+% Time date
+% Type string
+% Container string
+% Value double
+%EndEventDef
+%EventDef PajeAddVariable 52
+% Time date
+% Type string
+% Container string
+% Value double
+%EndEventDef
+%EventDef PajeSubVariable 53
+% Time date
+% Type string
+% Container string
+% Value double
+%EndEventDef
+1 "CT_Program" 0 "Program" 
+1 "CT_Process" "CT_Program" "Process" 
+1 "CT_Thread" "CT_Process" "Thread" 
+3 "ST_Program" "CT_Program" "Program state" 
+3 "ST_Process" "CT_Process" "Process state" 
+3 "ST_Thread" "CT_Thread" "Thread state" 
+3 "ST_User" "CT_Thread" "User state" 
+6 "STV_FLUSH" "ST_Thread" "EZTrace Flush" "1.0 1.0 1.0"
+6 "STV_Blocked" "ST_Thread" "Blocked" "1.0 0.0 0.0"
+6 "STV_Working" "ST_Thread" "Working" "0.0 0.0 1.0"
+6 "STV_Critical" "ST_Thread" "Critical Section" "0.0 1.0 0.0"
+6 "STV_User_Event_Green" "ST_User" "User Event" "0.0 1.0 0.0"
+6 "STV_User_Event_Red" "ST_User" "User Event" "1.0 0.0 0.0"
+6 "STV_User_Event_Blue" "ST_User" "User Event" "0.1 0.5 0.8"
+6 "STV_User_Event_Yellow" "ST_User" "User Event" "1.0 1.0 0.0"
+6 "STV_User_Event_Pink" "ST_User" "User Event" "1.0 0.0 1.0"
+6 "STV_EZTRACE_SYNC" "ST_Thread" "EZTrace synchronization" "1.0 1.0 1.0"
+4 "E_UserEvent" "CT_Thread" "User Event" 
+4 "E_SigSegv" "CT_Thread" "SIGNAL Received" 
+50 "V_CURCPU" "Current CPU" "CT_Thread" 
+6 "stdio_read" "ST_Thread" "stdio_read" "0.0 0.0 0.0"
+6 "stdio_pread" "ST_Thread" "stdio_pread" "0.0 0.0 0.0"
+6 "stdio_readv" "ST_Thread" "stdio_readv" "0.0 0.0 0.0"
+6 "stdio_fread" "ST_Thread" "stdio_fread" "0.0 0.0 0.0"
+6 "stdio_write" "ST_Thread" "stdio_write" "0.0 0.0 0.0"
+6 "stdio_pwrite" "ST_Thread" "stdio_pwrite" "0.0 0.0 0.0"
+6 "stdio_writev" "ST_Thread" "stdio_writev" "0.0 0.0 0.0"
+6 "stdio_fwrite" "ST_Thread" "stdio_fwrite" "0.0 0.0 0.0"
+6 "stdio_select" "ST_Thread" "stdio_select" "0.0 0.0 0.0"
+6 "stdio_pselect" "ST_Thread" "stdio_pselect" "0.0 0.0 0.0"
+6 "stdio_lseek" "ST_Thread" "stdio_lseek" "0.0 0.0 0.0"
+6 "stdio_poll" "ST_Thread" "stdio_poll" "0.0 0.0 0.0"
+6 "stdio_ppoll" "ST_Thread" "stdio_ppoll" "0.0 0.0 0.0"
+4 "E_SemPost" "CT_Thread" "SemPost" 
+4 "E_SemWait_Done" "CT_Thread" "SemWait done" 
+4 "E_Mutex_Lock" "CT_Thread" "Mutex Lock" 
+4 "E_Mutex_Unlock" "CT_Thread" "Mutex Unlock" 
+4 "E_CondSignal" "CT_Thread" "Cond Signal" 
+4 "E_LockStart" "CT_Thread" "Waiting for a lock" 
+4 "E_LockStop" "CT_Thread" "Lock acquired" 
+6 "STV_Blocked_sem" "ST_Thread" "Blocked on a semaphore" "1.0 0.0 0.0"
+6 "STV_Blocked_spin" "ST_Thread" "Blocked on a spinlock" "1.0 0.0 0.0"
+6 "STV_Blocked_mutex" "ST_Thread" "Blocked on a mutex" "1.0 0.0 0.0"
+6 "STV_Blocked_condition" "ST_Thread" "Blocked on a condition" "1.0 0.0 0.0"
+6 "STV_Blocked_rwlock" "ST_Thread" "Blocked on a rwlock" "1.0 0.0 0.0"
+6 "STV_Blocked_barrier" "ST_Thread" "Blocked on a barrier" "1.0 0.0 0.0"
+6 "STV_Critical_sem" "ST_Thread" "Critical Section (semaphore)" "0.0 1.0 0.0"
+6 "STV_Critical_spin" "ST_Thread" "Critical Section (spinlock)" "0.0 1.0 0.0"
+6 "STV_Critical_mutex" "ST_Thread" "Critical Section (mutex)" "0.0 1.0 0.0"
+6 "STV_Critical_condition" "ST_Thread" "Critical Section (condition)" "0.0 1.0 0.0"
+6 "STV_Critical_rwlock" "ST_Thread" "Critical Section (rwlock)" "0.0 1.0 0.0"
+41 "GOMP_Section_Link" "OpenMP Parallel Section" "CT_Program" "CT_Thread" "CT_Thread" 
+6 "GOMP_Section_State" "ST_Thread" "GOMP_Section_State" "1.0 0.0 1.0"
+6 "GOMP_Critical" "ST_Thread" "GOMP_Critical" "0.0 1.0 0.0"
+6 "GOMP_Atomic" "ST_Thread" "GOMP_Atomic" "0.0 1.0 0.0"
+6 "GOMP_Barrier" "ST_Thread" "GOMP_Barrier" "1.0 0.6 0.0"
+6 "GOMP_Implicit_Barrier" "ST_Thread" "GOMP_Implicit_Barrier" "1.0 0.0 0.0"
+6 "GOMP_For" "ST_Thread" "GOMP_For" "0.8 0.8 0.8"
+6 "GOMP_Master" "ST_Thread" "GOMP_Master" "1.0 1.0 1.0"
+6 "STV_GOMP_Lock" "ST_Thread" "Blocked on an OpenMP lock" "1.0 0.0 0.0"
+6 "STV_GOMP_Locked" "ST_Thread" "Holding an OpenMP lock" "0.0 1.0 0.0"
+6 "STV_GOMP_NLock" "ST_Thread" "Blocked on an OpenMP nested lock" "1.0 0.0 0.0"
+6 "STV_GOMP_NLocked" "ST_Thread" "Holding an OpenMP nested lock" "0.0 1.0 0.0"
+6 "GOMP_TaskWait" "ST_Thread" "GOMP_TaskWait" "1.0 0.6 0.0"
+6 "GOMP_Task" "ST_Thread" "GOMP_Task" "1.0 1.0 1.0"
+6 "GOMP_Untied_Task" "ST_Thread" "GOMP_Task" "0.0 1.0 1.0"
+6 "GOMP_Task_Create" "ST_Thread" "Creating an OpenMP Task" "0.3 0.4 0.1"
+6 "GOMP_Untied_Task_Create" "ST_Thread" "Creating an OpenMP Task" "0.1 0.5 0.8"
+6 "STV_MPI_Send" "ST_Thread" "Sending" "1.0 0.6 0.0"
+6 "STV_MPI_Isend" "ST_Thread" "MPI_Isend" "1.0 0.6 0.0"
+6 "STV_MPI_Ibsend" "ST_Thread" "MPI_Ibsend" "1.0 0.6 0.0"
+6 "STV_MPI_Issend" "ST_Thread" "MPI_Issend" "1.0 0.6 0.0"
+6 "STV_MPI_Irsend" "ST_Thread" "MPI_Irsend" "1.0 0.6 0.0"
+6 "STV_MPI_Sendrecv" "ST_Thread" "SendRecv" "1.0 0.6 0.0"
+6 "STV_MPI_Recv" "ST_Thread" "Receiving" "0.6 0.1 0.9"
+6 "STV_MPI_Irecv" "ST_Thread" "MPI_Irecv" "0.6 0.1 0.9"
+6 "STV_MPI_Wait" "ST_Thread" "MPI_Wait" "1.0 0.0 0.0"
+6 "STV_MPI_Barrier" "ST_Thread" "MPI_Barrier" "1.0 0.0 1.0"
+6 "STV_MPI_BCast" "ST_Thread" "MPI_BCast" "1.0 0.0 1.0"
+6 "STV_MPI_Gather" "ST_Thread" "MPI_Gather" "1.0 0.0 1.0"
+6 "STV_MPI_Scatter" "ST_Thread" "MPI_Scatter" "1.0 0.0 1.0"
+6 "STV_MPI_Allgather" "ST_Thread" "MPI_Allgather" "1.0 0.0 1.0"
+6 "STV_MPI_Alltoall" "ST_Thread" "MPI_Alltoall" "1.0 0.0 1.0"
+6 "STV_MPI_Reduce" "ST_Thread" "MPI_Reduce" "1.0 0.0 1.0"
+6 "STV_MPI_Allreduce" "ST_Thread" "MPI_Allreduce" "1.0 0.0 1.0"
+6 "STV_MPI_reduce_scatter" "ST_Thread" "MPI_Reduce_scatter" "1.0 0.0 1.0"
+6 "STV_MPI_Scan" "ST_Thread" "MPI_Scan" "1.0 0.0 1.0"
+6 "STV_MPI_Ibarrier" "ST_Thread" "MPI_Ibarrier" "1.0 0.0 1.0"
+6 "STV_MPI_Ibcast" "ST_Thread" "MPI_Ibcast" "1.0 0.0 1.0"
+6 "STV_MPI_Igather" "ST_Thread" "MPI_Igather" "1.0 0.0 1.0"
+6 "STV_MPI_Iscatter" "ST_Thread" "MPI_Iscatter" "1.0 0.0 1.0"
+6 "STV_MPI_Iallgather" "ST_Thread" "MPI_Iallgather" "1.0 0.0 1.0"
+6 "STV_MPI_Ialltoall" "ST_Thread" "MPI_Ialltoall" "1.0 0.0 1.0"
+6 "STV_MPI_Ireduce" "ST_Thread" "MPI_Ireduce" "1.0 0.0 1.0"
+6 "STV_MPI_Iallreduce" "ST_Thread" "MPI_Iallreduce" "1.0 0.0 1.0"
+6 "STV_MPI_Ireduce_scatter" "ST_Thread" "MPI_Ireduce_scatter" "1.0 0.0 1.0"
+6 "STV_MPI_Iscan" "ST_Thread" "MPI_Iscan" "1.0 0.0 1.0"
+6 "STV_MPI_Probe" "ST_Thread" "MPI_Probe" "0.6 0.1 0.9"
+41 "L_MPI_Coll" "MPI collective communication" "CT_Program" "CT_Thread" "CT_Thread" 
+41 "L_MPI_P2P" "MPI point to point communication" "CT_Program" "CT_Thread" "CT_Thread" 
+41 "L_MPI_SPAWN" "MPI SPAWN" "CT_Program" "CT_Thread" "CT_Thread" 
+4 "E_MPI_CommSend" "CT_Thread" "MPI Send" 
+4 "E_MPI_CommRecv" "CT_Thread" "MPI Recv" 
+4 "E_MPI_EndComm" "CT_Thread" "End of an MPI communication" 
+4 "E_MPI_Probe_success" "CT_Thread" "MPI_Probe" 
+4 "E_MPI_Iprobe_success" "CT_Thread" "MPI_IProbe success" 
+4 "E_MPI_Iprobe_failed" "CT_Thread" "MPI_IProbe failed" 
+50 "V_Mem" "Memory used" "CT_Process" 
+1 "CT_GPU" "0" "GPU" 
+3 "ST_GPU" "CT_GPU" "GPU" 
+41 "hToD_kernel" "kernel" "CT_Process" "CT_Thread" "CT_GPU" 
+41 "HToD_memcpy" "memcpy" "CT_Process" "CT_Thread" "CT_GPU" 
+41 "DToH_memcpy" "memcpy" "CT_Process" "CT_GPU" "CT_Thread" 
+41 "HToH_memcpy" "memcpy" "CT_Process" "CT_Thread" "CT_Thread" 
+41 "DToD_memcpy" "memcpy" "CT_Process" "CT_GPU" "CT_GPU" 
+6 "cuda_cuMemAlloc" "ST_Thread" "cuda_cuMemAlloc" "1.0 1.0 0.0"
+6 "cuda_cuLaunchKernel" "ST_Thread" "cuda_cuLaunchKernel" "0.0 1.0 0.0"
+6 "cuda_cudaThreadSynchronize" "ST_Thread" "cuda_cudaThreadSynchronize" "1.0 0.0 0.0"
+6 "cuda_cuMemcpy" "ST_Thread" "cuda_cuMemcpy" "0.0 0.0 0.0"
+6 "cuda_gpu_kernel" "ST_GPU" "cuda_gpu_kernel" "0.0 1.0 0.0"
+6 "cuda_gpu_memcpy" "ST_GPU" "cuda_gpu_memcpy" "0.0 0.0 0.0"
+6 "cuda_gpu_idle" "ST_GPU" "cuda_gpu_idle" "1.0 0.0 0.0"
+50 "V_GPU_Mem" "Memory used" "CT_GPU" 
+7 0.0000000000000e+00 "C_Prog" "CT_Program" 0 "Program"
+7 0.0000000000000e+00 "P#0" "CT_Process" "C_Prog" "P#0"
+7 0.0000000000000e+00 "P#0_T#3115648832" "CT_Thread" "P#0" "P#0_T#3115648832"
+10 0.0000000000000e+00 "ST_Thread" "P#0_T#3115648832" "STV_Working"
+7 0.0000000000000e+00 "P#1" "CT_Process" "C_Prog" "P#1"
+7 0.0000000000000e+00 "P#1_T#33756992" "CT_Thread" "P#1" "P#1_T#33756992"
+10 0.0000000000000e+00 "ST_Thread" "P#1_T#33756992" "STV_Working"
+7 0.0000000000000e+00 "P#2" "CT_Process" "C_Prog" "P#2"
+7 0.0000000000000e+00 "P#2_T#2126133056" "CT_Thread" "P#2" "P#2_T#2126133056"
+10 0.0000000000000e+00 "ST_Thread" "P#2_T#2126133056" "STV_Working"
+11 1.5766000000000e-02 "ST_Thread" "P#2_T#2126133056" "STV_MPI_Recv"
+11 1.6047000000000e-02 "ST_Thread" "P#1_T#33756992" "STV_MPI_Recv"
+11 9.3657000000000e-02 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Send"
+42 9.3657000000000e-02 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=0, dest=1, len=4, tag=1" "0_1_                   1_0x872100"
+12 1.0525800000000e-01 "ST_Thread" "P#0_T#3115648832"
+43 1.0567000000000e-01 "L_MPI_P2P" "C_Prog" "P#1_T#33756992" "src=0, dest=1, len=4, tag=1" "0_1_                   1_0x872100"
+20 1.0567000000000e-01 "E_MPI_EndComm" "P#1_T#33756992" "duration = 12.013000 us -- len=1 bytes -- throughput=0.083243 MB/s"
+12 1.0567000000000e-01 "ST_Thread" "P#1_T#33756992"
+11 1.0684000000000e-01 "ST_Thread" "P#1_T#33756992" "STV_MPI_Recv"
+11 1.0709700000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Send"
+42 1.0709700000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=0, dest=1, len=4, tag=1" "0_1_                   1_0x872188"
+12 1.0952400000000e-01 "ST_Thread" "P#0_T#3115648832"
+43 1.1028500000000e-01 "L_MPI_P2P" "C_Prog" "P#1_T#33756992" "src=0, dest=1, len=4, tag=1" "0_1_                   1_0x872188"
+20 1.1028500000000e-01 "E_MPI_EndComm" "P#1_T#33756992" "duration = 3.188000 us -- len=1 bytes -- throughput=0.313676 MB/s"
+12 1.1028500000000e-01 "ST_Thread" "P#1_T#33756992"
+11 1.1097400000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Send"
+42 1.1097400000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=0, dest=1, len=3840, tag=1" "0_1_                   1_0x872210"
+11 1.1138900000000e-01 "ST_Thread" "P#1_T#33756992" "STV_MPI_Recv"
+12 1.1446100000000e-01 "ST_Thread" "P#0_T#3115648832"
+11 1.1601700000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Send"
+42 1.1601700000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=0, dest=1, len=840, tag=1" "0_1_                   1_0x872298"
+12 1.1860200000000e-01 "ST_Thread" "P#0_T#3115648832"
+43 1.1926800000000e-01 "L_MPI_P2P" "C_Prog" "P#1_T#33756992" "src=0, dest=1, len=3840, tag=1" "0_1_                   1_0x872210"
+20 1.1926800000000e-01 "E_MPI_EndComm" "P#1_T#33756992" "duration = 8.294000 us -- len=480 bytes -- throughput=57.873165 MB/s"
+12 1.1926800000000e-01 "ST_Thread" "P#1_T#33756992"
+11 1.2039100000000e-01 "ST_Thread" "P#1_T#33756992" "STV_MPI_Recv"
+43 1.2395100000000e-01 "L_MPI_P2P" "C_Prog" "P#1_T#33756992" "src=0, dest=1, len=840, tag=1" "0_1_                   1_0x872298"
+20 1.2395100000000e-01 "E_MPI_EndComm" "P#1_T#33756992" "duration = 7.934000 us -- len=105 bytes -- throughput=13.234182 MB/s"
+12 1.2395100000000e-01 "ST_Thread" "P#1_T#33756992"
+11 1.3956900000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Send"
+42 1.3956900000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=0, dest=2, len=4, tag=1" "0_2_                   1_0x8845a0"
+12 1.4279500000000e-01 "ST_Thread" "P#0_T#3115648832"
+43 1.4430000000000e-01 "L_MPI_P2P" "C_Prog" "P#2_T#2126133056" "src=0, dest=2, len=4, tag=1" "0_2_                   1_0x8845a0"
+20 1.4430000000000e-01 "E_MPI_EndComm" "P#2_T#2126133056" "duration = 4.731000 us -- len=1 bytes -- throughput=0.211372 MB/s"
+12 1.4430000000000e-01 "ST_Thread" "P#2_T#2126133056"
+11 1.4436100000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Send"
+42 1.4436100000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=0, dest=2, len=4, tag=1" "0_2_                   1_0x884628"
+11 1.4550600000000e-01 "ST_Thread" "P#2_T#2126133056" "STV_MPI_Recv"
+12 1.4673000000000e-01 "ST_Thread" "P#0_T#3115648832"
+11 1.4835000000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Send"
+42 1.4835000000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=0, dest=2, len=3840, tag=1" "0_2_                   1_0x8846b0"
+43 1.4885800000000e-01 "L_MPI_P2P" "C_Prog" "P#2_T#2126133056" "src=0, dest=2, len=4, tag=1" "0_2_                   1_0x884628"
+20 1.4885800000000e-01 "E_MPI_EndComm" "P#2_T#2126133056" "duration = 4.497000 us -- len=1 bytes -- throughput=0.222370 MB/s"
+12 1.4885800000000e-01 "ST_Thread" "P#2_T#2126133056"
+11 1.4993900000000e-01 "ST_Thread" "P#2_T#2126133056" "STV_MPI_Recv"
+12 1.5465700000000e-01 "ST_Thread" "P#0_T#3115648832"
+11 1.5606900000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Send"
+42 1.5606900000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=0, dest=2, len=840, tag=1" "0_2_                   1_0x884738"
+43 1.5780000000000e-01 "L_MPI_P2P" "C_Prog" "P#2_T#2126133056" "src=0, dest=2, len=3840, tag=1" "0_2_                   1_0x8846b0"
+20 1.5780000000000e-01 "E_MPI_EndComm" "P#2_T#2126133056" "duration = 9.450000 us -- len=480 bytes -- throughput=50.793652 MB/s"
+12 1.5780000000000e-01 "ST_Thread" "P#2_T#2126133056"
+11 1.5891100000000e-01 "ST_Thread" "P#2_T#2126133056" "STV_MPI_Recv"
+11 1.6258700000000e-01 "ST_Thread" "P#1_T#33756992" "STV_MPI_Send"
+42 1.6258700000000e-01 "L_MPI_P2P" "C_Prog" "P#1_T#33756992" "src=1, dest=0, len=4, tag=2" "1_0_                   2_0x85fc60"
+12 1.6830800000000e-01 "ST_Thread" "P#1_T#33756992"
+11 1.6942800000000e-01 "ST_Thread" "P#1_T#33756992" "STV_MPI_Send"
+42 1.6942800000000e-01 "L_MPI_P2P" "C_Prog" "P#1_T#33756992" "src=1, dest=0, len=4, tag=2" "1_0_                   2_0x85fce8"
+12 1.7095900000000e-01 "ST_Thread" "P#1_T#33756992"
+11 1.7198800000000e-01 "ST_Thread" "P#1_T#33756992" "STV_MPI_Send"
+42 1.7198800000000e-01 "L_MPI_P2P" "C_Prog" "P#1_T#33756992" "src=1, dest=0, len=1792, tag=2" "1_0_                   2_0x85fd70"
+12 1.7365000000000e-01 "ST_Thread" "P#1_T#33756992"
+43 5.1728900000000e-01 "L_MPI_P2P" "C_Prog" "P#2_T#2126133056" "src=0, dest=2, len=840, tag=1" "0_2_                   1_0x884738"
+20 5.1728900000000e-01 "E_MPI_EndComm" "P#2_T#2126133056" "duration = 361.220001 us -- len=105 bytes -- throughput=0.290682 MB/s"
+12 5.1728900000000e-01 "ST_Thread" "P#2_T#2126133056"
+12 5.1780300000000e-01 "ST_Thread" "P#0_T#3115648832"
+11 5.2241600000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Recv"
+43 5.3021000000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=1, dest=0, len=4, tag=2" "1_0_                   2_0x85fc60"
+20 5.3021000000000e-01 "E_MPI_EndComm" "P#0_T#3115648832" "duration = 367.622986 us -- len=2 bytes -- throughput=0.005440 MB/s"
+12 5.3021000000000e-01 "ST_Thread" "P#0_T#3115648832"
+11 5.3143600000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Recv"
+43 5.3503900000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=1, dest=0, len=4, tag=2" "1_0_                   2_0x85fce8"
+20 5.3503900000000e-01 "E_MPI_EndComm" "P#0_T#3115648832" "duration = 365.610992 us -- len=2 bytes -- throughput=0.005470 MB/s"
+12 5.3503900000000e-01 "ST_Thread" "P#0_T#3115648832"
+11 5.3625000000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Recv"
+43 5.3982100000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=1, dest=0, len=1792, tag=2" "1_0_                   2_0x85fd70"
+20 5.3982100000000e-01 "E_MPI_EndComm" "P#0_T#3115648832" "duration = 367.833008 us -- len=448 bytes -- throughput=1.217944 MB/s"
+12 5.3982100000000e-01 "ST_Thread" "P#0_T#3115648832"
+11 5.5572500000000e-01 "ST_Thread" "P#2_T#2126133056" "STV_MPI_Send"
+42 5.5572500000000e-01 "L_MPI_P2P" "C_Prog" "P#2_T#2126133056" "src=2, dest=0, len=4, tag=2" "2_0_                   2_0x85fdf8"
+11 5.5769700000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Recv"
+12 5.6143700000000e-01 "ST_Thread" "P#2_T#2126133056"
+11 5.6253900000000e-01 "ST_Thread" "P#2_T#2126133056" "STV_MPI_Send"
+42 5.6253900000000e-01 "L_MPI_P2P" "C_Prog" "P#2_T#2126133056" "src=2, dest=0, len=4, tag=2" "2_0_                   2_0x85fe80"
+12 5.6426000000000e-01 "ST_Thread" "P#2_T#2126133056"
+11 5.6529800000000e-01 "ST_Thread" "P#2_T#2126133056" "STV_MPI_Send"
+42 5.6529800000000e-01 "L_MPI_P2P" "C_Prog" "P#2_T#2126133056" "src=2, dest=0, len=1792, tag=2" "2_0_                   2_0x85ff08"
+43 5.6539800000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=2, dest=0, len=4, tag=2" "2_0_                   2_0x85fdf8"
+20 5.6539800000000e-01 "E_MPI_EndComm" "P#0_T#3115648832" "duration = 9.673000 us -- len=2 bytes -- throughput=0.206761 MB/s"
+12 5.6539800000000e-01 "ST_Thread" "P#0_T#3115648832"
+11 5.6650600000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Recv"
+12 5.6698700000000e-01 "ST_Thread" "P#2_T#2126133056"
+43 5.6805100000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=2, dest=0, len=4, tag=2" "2_0_                   2_0x85fe80"
+20 5.6805100000000e-01 "E_MPI_EndComm" "P#0_T#3115648832" "duration = 5.512000 us -- len=2 bytes -- throughput=0.362845 MB/s"
+12 5.6805100000000e-01 "ST_Thread" "P#0_T#3115648832"
+11 5.6912200000000e-01 "ST_Thread" "P#0_T#3115648832" "STV_MPI_Recv"
+43 5.7261200000000e-01 "L_MPI_P2P" "C_Prog" "P#0_T#3115648832" "src=2, dest=0, len=1792, tag=2" "2_0_                   2_0x85ff08"
+20 5.7261200000000e-01 "E_MPI_EndComm" "P#0_T#3115648832" "duration = 7.314000 us -- len=448 bytes -- throughput=61.252392 MB/s"
+12 5.7261200000000e-01 "ST_Thread" "P#0_T#3115648832"
