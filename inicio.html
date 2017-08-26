@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Parallel Program Graph Visualization and Analysis</title>
+	<link rel="stylesheet" href="_css/estilo.css"/>
+</head>
+<script language="javascript" src="_js/funcoes.js"></script>
+<body>
+
+<div id="protecao" onclick="hideInfo()"></div>
+
+<div id="info">
+
+<section id="secao-img">
+<h1 id="titleSel">TITLE</h1>
+<div id="imgSel"">
+<video id="videoSel">
+<source src="" type="video/mp4"/>
+</video>
+<button id="btnPlay" type="button" onclick="playGif()">&#9654;</button>
+<!-- <div id="video-time">00:00/00:00</div> -->
+</div>
+</section>
+
+<button id="btnClose" type="button" onclick="hideInfo()">Close</button>
+<aside id="info-adic">
+
+<a id="aCode" target="_blank" href=""><button id="btnCode" type="button">View code</button></a>
+<div id="chkbox"><input id="chk" type="checkbox" onclick="changeImg()">Display node labels</div>
+
+<div id="graphInfoAdic">
+</div>
+
+</aside>
+
+</div>
+
+<div id="fundo_menu">
+</div>
+
+<div id="interface">
+	<header id="cabecalho">
+		Parallel Program Graph Visualization and Analysis
+		<!-- Visualização de padrões de comunicação<br/>em programas paralelos através de grafos dinâmicos -->
+	</header>
+	
+	<nav id="menu">
+		<ul>
+			<a href="inicio.html"><li>home</li></a>
+			<a href="sobre.html"><li>about</li></a>
+			<a href="autores.html"><li>authors</li></a>
+			<a href="publicacoes.html"><li>related work</li></a>
+		</ul>
+	</nav>
+	
+	<section id="nas-sp">
+	<h1>NAS SP-MZ</h1>
+		<ul id="ulh">
+		<li id="grafo32" onclick="openInfo(this.id)">
+			<figure class="grafo-legenda">
+			<figcaption>32 Nodes - Yifan Hu</figcaption>
+			</figure>
+			<h1 class="nome-grafo" style="display: none">32 Nodes - Yifan Hu</h1>
+			<div class="info-grafo" style="display: none">
+				<table>
+				<caption>Aditional information</caption>
+				<tr><td>Average degree</td><td class="tableCol2">4</td></tr>
+				<tr><td>Graph density</td><td class="tableCol2">0,129</td></tr>
+				<tr><td>Number of communities</td><td class="tableCol2">4</td></tr>
+				<tr><td>Modularity</td><td class="tableCol2">0,507</td></tr>
+				<!-- <tr><td>Clustering coefficient</td><td class="tableCol2"></td></tr> -->
+				</table>
+			</div>
+			<a class="link-codigo" target="_blank" href="_codigos/temp.c"></a>
+			<video class="video-grafo">
+				<source src="_videos/32.mp4"/>
+			</video>
+		</li>
+		<li id="grafo64" onclick="openInfo(this.id)">
+			<figure class="grafo-legenda">
+			<figcaption>64 Nodes - Yifan Hu</figcaption>
+			</figure>
+			<h1 class="nome-grafo" style="display: none">64 Nodes - Yifan Hu</h1>
+			<div class="info-grafo" style="display: none">
+				<table>
+				<caption>Aditional information</caption>
+				<tr><td>Average degree</td><td class="tableCol2">4</td></tr>
+				<tr><td>Graph density</td><td class="tableCol2">0,063</td></tr>
+				<tr><td>Number of communities</td><td class="tableCol2">4</td></tr>
+				<tr><td>Modularity</td><td class="tableCol2">0,533</td></tr>
+				<!-- <tr><td>Clustering coefficient</td><td class="tableCol2"></td></tr> -->
+				</table>
+			</div>
+			<a class="link-codigo" target="_blank" href="_codigos/temp.c"></a>
+			<video class="video-grafo">
+				<source src="_videos/64.mp4"/>
+			</video>
+		</li>
+		<li id="grafo128" onclick="openInfo(this.id)">
+			<figure class="grafo-legenda">
+			<figcaption>128 Nodes - Yifan Hu</figcaption>
+			</figure>
+			<h1 class="nome-grafo" style="display: none">128 Nodes - Yifan Hu</h1>
+			<div class="info-grafo" style="display: none">
+				<table>
+				<caption>Aditional information</caption>
+				<tr><td>Average degree</td><td class="tableCol2">4</td></tr>
+				<tr><td>Graph density</td><td class="tableCol2">0,031</td></tr>
+				<tr><td>Number of communities</td><td class="tableCol2">8</td></tr>
+				<tr><td>Modularity</td><td class="tableCol2">0,634</td></tr>
+				<!-- <tr><td>Clustering coefficient</td><td class="tableCol2"></td></tr> -->
+				</table>
+			</div>
+			<a class="link-codigo" target="_blank" href="_codigos/temp.c"></a>
+			<video class="video-grafo">
+				<source src="_videos/128.mp4"/>
+			</video>
+		</li>
+		</ul>
+	</section>
+	
+	<section id="educacional">
+	<h1>Educational</h1>
+		<ul id="ulh">
+		<li id="grafo_type" onclick="openInfo(this.id)"">
+			<figure class="grafo-legenda">
+			<figcaption>Type - Yifan Hu</figcaption>
+			</figure>
+			<h1 class="nome-grafo" style="display: none">Type - Yifan Hu</h1>
+			<div class="info-grafo" style="display: none">
+				<table>
+				<caption>Aditional information</caption>
+				<tr><td>Average degree</td><td class="tableCol2">1</td></tr>
+				<tr><td>Graph density</td><td class="tableCol2">1</td></tr>
+				<tr><td>Number of communities</td><td class="tableCol2">1</td></tr>
+				<tr><td>Modularity</td><td class="tableCol2">0</td></tr>
+				<!-- <tr><td>Clustering coefficient</td><td class="tableCol2"></td></tr> -->
+				</table>
+			</div>
+			<a class="link-codigo" href="https://github.com/pedrospoljaric/parser2gexf/tree/master/_codigos/type_mpi.c"></a>
+			<video class="video-grafo">
+				<source src="_videos/type.mp4"/>
+			</video>
+		</li>
+		<li id="grafo_ring" onclick="openInfo(this.id)">
+			<figure class="grafo-legenda">
+			<figcaption>Ring - Yifan Hu</figcaption>
+			</figure>
+			<h1 class="nome-grafo" style="display: none">Ring - Yifan Hu</h1>
+			<div class="info-grafo" style="display: none">
+				<table>
+				<caption>Aditional information</caption>
+				<tr><td>Average degree</td><td class="tableCol2">1</td></tr>
+				<tr><td>Graph density</td><td class="tableCol2">0,053</td></tr>
+				<tr><td>Number of communities</td><td class="tableCol2">4</td></tr>
+				<tr><td>Modularity</td><td class="tableCol2">0,54</td></tr>
+				<!-- <tr><td>Clustering coefficient</td><td class="tableCol2"></td></tr> -->
+				</table>
+			</div>
+			<a class="link-codigo" href="https://github.com/pedrospoljaric/parser2gexf/tree/master/_codigos/ring_mpi.c"></a>
+			<video class="video-grafo">
+				<source src="_videos/ring.mp4"/>
+			</video>
+		</li>
+		<li id="grafo_sum" onclick="openInfo(this.id)">
+			<figure class="grafo-legenda">
+			<figcaption>Sum - Yifan Hu</figcaption>
+			</figure>
+			<h1 class="nome-grafo" style="display: none">Sum - Yifan Hu</h1>
+			<div class="info-grafo" style="display: none">
+				<table>
+				<caption>Aditional information</caption>
+				<tr><td>Average degree</td><td class="tableCol2">0,95</td></tr>
+				<tr><td>Graph density</td><td class="tableCol2">0,05</td></tr>
+				<tr><td>Number of communities</td><td class="tableCol2">1</td></tr>
+				<tr><td>Modularity</td><td class="tableCol2">0</td></tr>
+				<!-- <tr><td>Clustering coefficient</td><td class="tableCol2"></td></tr> -->
+				</table>
+			</div>
+			<a class="link-codigo" href="https://github.com/pedrospoljaric/parser2gexf/tree/master/_codigos/sum_mpi.c"></a>
+			<video class="video-grafo">
+				<source src="_videos/sum.mp4"/>
+			</video>
+		</li>
+		<li id="grafo_fire" onclick="openInfo(this.id)">
+			<figure class="grafo-legenda">
+			<figcaption>Fire - Yifan Hu</figcaption>
+			</figure>
+			<h1 class="nome-grafo" style="display: none">Fire - Yifan Hu</h1>
+			<div class="info-grafo" style="display: none">
+				<table>
+				<caption>Aditional information</caption>
+				<tr><td>Average degree</td><td class="tableCol2">0,95</td></tr>
+				<tr><td>Graph density</td><td class="tableCol2">0,05</td></tr>
+				<tr><td>Number of communities</td><td class="tableCol2">1</td></tr>
+				<tr><td>Modularity</td><td class="tableCol2">0</td></tr>
+				<!-- <tr><td>Clustering coefficient</td><td class="tableCol2"></td></tr> -->
+				</table>
+			</div>
+			<a class="link-codigo" href="https://github.com/pedrospoljaric/parser2gexf/tree/master/_codigos/fire_mpi_3.c"></a>
+			<video class="video-grafo">
+				<source src="_videos/fire.mp4"/>
+			</video>
+		</li>
+		<li id="grafo_intervals" onclick="openInfo(this.id)">
+			<figure class="grafo-legenda">
+			<figcaption>Intervals - Yifan Hu</figcaption>
+			</figure>
+			<h1 class="nome-grafo" style="display: none">Intervals - Yifan Hu</h1>
+			<div class="info-grafo" style="display: none">
+				<table>
+				<caption>Aditional information</caption>
+				<tr><td>Average degree</td><td class="tableCol2">1,8</td></tr>
+				<tr><td>Graph density</td><td class="tableCol2">0,2</td></tr>
+				<tr><td>Number of communities</td><td class="tableCol2">1</td></tr>
+				<tr><td>Modularity</td><td class="tableCol2">0</td></tr>
+				<!-- <tr><td>Clustering coefficient</td><td class="tableCol2"></td></tr> -->
+				</table>
+			</div>
+			<a class="link-codigo" href="https://github.com/pedrospoljaric/parser2gexf/tree/master/_codigos/intervals_mpi.c"></a>
+			<video class="video-grafo">
+				<source src="_videos/intervals.mp4"/>
+			</video>
+		</li>
+		<li id="grafo_monte_carlo" onclick="openInfo(this.id)">
+			<figure class="grafo-legenda">
+			<figcaption>Monte Carlo - Yifan Hu</figcaption>
+			</figure>
+			<h1 class="nome-grafo" style="display: none">Monte Carlo - Yifan Hu</h1>
+			<div class="info-grafo" style="display: none">
+				<table>
+				<caption>Aditional information</caption>
+				<tr><td>Average degree</td><td class="tableCol2">1,9</td></tr>
+				<tr><td>Graph density</td><td class="tableCol2">0,1</td></tr>
+				<tr><td>Number of communities</td><td class="tableCol2">1</td></tr>
+				<tr><td>Modularity</td><td class="tableCol2">0</td></tr>
+				<!-- <tr><td>Clustering coefficient</td><td class="tableCol2"></td></tr> -->
+				</table>
+			</div>
+			<a class="link-codigo" href="https://github.com/pedrospoljaric/parser2gexf/tree/master/_codigos/monte_carlo_mpi.c"></a>
+			<video class="video-grafo">
+				<source src="_videos/monte_carlo.mp4"/>
+			</video>
+		</li>
+		</ul>
+	</section>
+</div>
+</body>
+</html>
